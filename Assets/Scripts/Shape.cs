@@ -60,7 +60,6 @@ abstract public class Shape : MonoBehaviour
         {
             if (!alreadyCalledTheEvent)
             {
-                Debug.Log(GetVolume());
                 GameObject newShape = Instantiate(prefabToGenerate, transform.position, prefabToGenerate.transform.rotation);
                 float newShapeScale = UnityEngine.Random.Range(0.5f, 2);
                 newShape.transform.localScale = new Vector3(newShapeScale, newShapeScale, newShapeScale);
